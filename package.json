@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Burger selection",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssh1sharma/Burger.git"
+  },
+  "author": "S Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssh1sharma/Burger/issues"
+  },
+  "homepage": "https://github.com/ssh1sharma/Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}
