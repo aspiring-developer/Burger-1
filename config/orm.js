@@ -7,6 +7,6 @@ insertOne()
 updateOne()
 
 
-// module.exports = selectAll();
-// module.exports = insertOne();
-// module.exports = updateOne();
+
+// exporting to use in another page
+module.exports = orm;
