@@ -1,8 +1,11 @@
 const orm = require('../config/orm.js');
 
+// creating burger object
+let burger = {
+	
+}
 
 
 
-
-// exporting to use in another page
+// exporting the module from this page to be imported into another page
 module.exports = burger;
