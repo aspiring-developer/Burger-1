@@ -45,7 +45,7 @@ let orm = {
     connection.query(queryString, function (err, data) {
       if (err) throw err;
       console.log(data);
-      callback(result);
+      callback(data);
 
     });
   },
@@ -61,12 +61,12 @@ let orm = {
 
     console.log(queryString);
 
-    connection.query(queryString, vals, function(err, result) {
+    connection.query(queryString, vals, function(err, data) {
       if (err) {
         throw err;
       }
 
-      callback(result);
+      callback(data);
     });
   },
 
@@ -80,12 +80,12 @@ updateOne: function(tableInput, objColVals, condition, callback) {
   queryString += condition;
 
   console.log(queryString);
-  connection.query(queryString, function(err, result) {
+  connection.query(queryString, function(err, data) {
     if (err) {
       throw err;
     }
 
-    callback(result);
+    callback(data);
   });
 }
 };
