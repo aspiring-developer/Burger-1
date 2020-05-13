@@ -1,34 +1,36 @@
-<h1>Burger Selection</h1>
+<div class="container-fluid m-0 mx-auto d-flex justify-content-center align-items-center customWrapper-SS">
+<div class="row">
+  <h1>Burger Selection App</h1>
+<p> An app that lets you virtually create, select and modify burgers. </p>
+  <h2>Burgers waiting to be devoured!</h2>
 
-<h2>Burgers waiting to be devoured!</h2>
-
-<ul>
-  {{#each burgers}}
+  <ul>
+    {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
+    {{> burgers/burger-block devour=true}}
     {{/unless}}
-  {{/each}}
-</ul>
+    {{/each}}
+  </ul>
 
-<h2>Burgers that are devoured!</h2>
+  <h2>Burgers that are devoured!</h2>
 
-<ul>
-  {{#each burgers}}
+  <ul>
+    {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
+    {{> burgers/burger-block devour=false}}
     {{/if}}
-  {{/each}}
-</ul>
+    {{/each}}
+  </ul>
 
-<h2>Add a Burger</h2>
-<form class="create-form">
+  <h2>Add a Burger</h2>
+  <form class="create-form">
 
-  <div class="form-group">
-    <label for="burgerLabel">Burger Name:</label>
-    <input type="text" id="burgerLabel" name="burger_name">
-  </div>
+    <div class="form-group">
+      <label for="burgerLabel">Burger Name:</label>
+      <input type="text" id="burgerLabel" name="burger_name">
+    </div>
 
- {{!--  
+    {{!--  
  // Codes block below for checkboxes. It looks like it is not doing much, so delete if not needed!
 
   <div class="form-group">
@@ -38,6 +40,7 @@
   </div> 
   --}}
 
-  <button type="submit">Add Burger</button>
-</form>
+    <button type="submit">Add Burger</button>
+  </form>
 
+</div> <!-- .customWrapper-SS ends -->
