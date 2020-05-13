@@ -1,12 +1,12 @@
 # Burger Selection App
-A restaurant app that lets users to enter and save their favorite burger names.
+A restaurant app that lets users to virtually create and modify their favorite burgers.
 
 ### A placeholder image for now!
-***This will be replaced by the app's functionality Gifs/video/image.***
+***This will be replaced by the app's functionality Gifs/video/image or something meaningful thing!***
 
 ![Burger Placeholder Image](https://github.com/ssh1sharma/Burger/blob/master/public/assets/img/spicy_chicken.jpg)
 
-### Check development phase screenshots in "Screenshots" folder.
+- **Check development phase screenshots in "Screenshots" folder.**
 
 ### Directory Map:
 ```
@@ -32,6 +32,7 @@ Burger
 │         |    └── veggie_patties.jpg
 │         └── js
 |              └── burgers.js
+|── Screenshots
 |── views
 |    |── layouts
 |    |    └── main.handlebars

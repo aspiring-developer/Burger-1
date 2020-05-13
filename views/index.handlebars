@@ -1,36 +1,33 @@
-<div class="container-fluid m-0 mx-auto d-flex justify-content-center align-items-center customWrapper-SS">
-<div class="row">
-  <h1>Burger Selection App</h1>
-<p> An app that lets you virtually create, select and modify burgers. </p>
-  <h2>Burgers waiting to be devoured!</h2>
+<div class="container m-0 p-4 mx-auto mainWrapper">
+  <div class="row headerRow text-center">
+    <div class="col headerColumn">
+      <h1>Eat-Da-Burger</h1>
+      <p> virtually create, select and modify your burgers! </p>
+    </div> <!-- .headerColumn ends -->
+  </div> <!-- .headerRow ends -->
 
-  <ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burger-block devour=true}}
-    {{/unless}}
-    {{/each}}
-  </ul>
+  <div class="row d-flex justify-content-center align-items-center">
 
-  <h2>Burgers that are devoured!</h2>
+    <div class="col text-center my-4" id="burgerImageDiv">
+      <h5>Yummy Burger!!!</h5>
+      
+    {{!-- <img src="spicy_chicken.jpg.jpg" alt="Spicy Chicken Sandwich" id="burgerImage" width="300" height="200" />   --}}
+      <img src="https://source.unsplash.com/random/300x200" id="burgerImage" /> 
+     {{!--  <img src="http://localhost/Burger/spicy_chicken.jpg" width="300" height="200" id="burgerImage" /> --}}
 
-  <ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    {{> burgers/burger-block devour=false}}
-    {{/if}}
-    {{/each}}
-  </ul>
+      </div>
+    <div class="col">
+      
+      <h5 class="mt-4">Add a Burger</h5>
+      <form class="create-form">
 
-  <h2>Add a Burger</h2>
-  <form class="create-form">
+        <div class="form-group">
+          <label for="burgerLabel" class="inputLabel">Burger Name: &nbsp;</label> 
+          <input type="text" id="burgerLabel" name="burger_name"> 
+          <button type="submit" class="addBurgerBtn">Add to the List</button>
+        </div>
 
-    <div class="form-group">
-      <label for="burgerLabel">Burger Name:</label>
-      <input type="text" id="burgerLabel" name="burger_name">
-    </div>
-
-    {{!--  
+        {{!--  
  // Codes block below for checkboxes. It looks like it is not doing much, so delete if not needed!
 
   <div class="form-group">
@@ -39,8 +36,36 @@
     <input type="radio" name="devoured" value="0"> Not Devoured!
   </div> 
   --}}
+      </form>
+    </div> <!--  ends -->
+    
+    <hr>
+  </div>
+  
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-6 p-2 newBurgerField">
+      <h5>Newly created burgers!</h5>
+      <br>
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devour=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-sm col-md-6 p-2 devouredBurgerField">
+      <h5>Burgers devoured!</h5>
+      <br>
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block devour=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
 
-    <button type="submit">Add Burger</button>
-  </form>
-
-</div> <!-- .customWrapper-SS ends -->
+    </div>
+  </div> <!-- .mainSectionRow ends -->
+  
+</div> <!-- .mainWrapper ends -->

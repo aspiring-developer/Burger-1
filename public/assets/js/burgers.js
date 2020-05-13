@@ -1,5 +1,9 @@
 // This "burgers.js" file serves as a front-end javascript (Note: "burger.js" in models folder is backend node.js)
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
+
+// document.ready wrapper function to use jQuery
+$(document).ready(function() { 
+
 $(function() {
   $(".change-devour").on("click", function(event) {
     let id = $(this).data("id");
@@ -26,10 +30,10 @@ $(function() {
     // required preventDefault method on a submit event.
     event.preventDefault();
 
-    let newBurger = {
-      burger_name: $("#burgerLabel").val().trim(),
-      devoured: $("[burger_name=devoured]:checked").val().trim()
-    };
+    // let newBurger = {
+    //   burger_name: $("#burgerLabel").val().trim(),
+    //   devoured: $("[burger_name=devoured]:checked").val().trim()
+    // };
 
     // Send the POST request.
     $.ajax("/api/burgers", {
@@ -44,3 +48,5 @@ $(function() {
     );
   });
 });
+
+});  // $(document).ready(function()  wrapper ends
