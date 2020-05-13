@@ -6,6 +6,7 @@ A restaurant app that lets users to enter and save their favorite burger names.
 
 ![Burger Placeholder Image](https://github.com/ssh1sharma/Burger/blob/master/public/assets/img/spicy_chicken.jpg)
 
+### Check development phase screenshots in "Screenshots" folder.
 
 ### Directory Map:
 ```
