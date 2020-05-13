@@ -1,11 +1,11 @@
 <h1>Burger Selection</h1>
 
-<h2>Burgers that are not devoured!</h2>
+<h2>Burgers waiting to be devoured!</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
+      {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -15,7 +15,7 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
+      {{> burgers/burger-block devour=false}}
     {{/if}}
   {{/each}}
 </ul>
@@ -25,14 +25,19 @@
 
   <div class="form-group">
     <label for="burgerLabel">Burger Name:</label>
-    <input type="text" id="burgerLabel" name="name">
+    <input type="text" id="burgerLabel" name="burger_name">
   </div>
+
+ {{!--  
+ // Codes block below for checkboxes. It looks like it is not doing much, so delete if not needed!
 
   <div class="form-group">
     <label for="devouredLabel">Devoured?</label><br>
     <input type="radio" name="devoured" value="1" checked> Devoured!<br>
     <input type="radio" name="devoured" value="0"> Not Devoured!
-  </div>
+  </div> 
+  --}}
 
   <button type="submit">Add Burger</button>
 </form>
+
