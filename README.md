@@ -25,13 +25,18 @@ Burger
 |    └── assets
 |         |── css
 │         |    └── burger_style.css
-|         └── img
-│              |── double_roast.jpg
-|              |── spicy_chicken.jpg
-│              └── veggie_patties.jpg
+|         |── img
+│         |    |── double_roast.jpg
+|         |    |── spicy_chicken.jpg
+│         |    └── veggie_patties.jpg
+│         └── js
+|              └── burgers.js
 |── views
 |    |── layouts
 |    |    └── main.handlebars
+|    |── partials
+|    |    └── burgers
+|    |         └── burger-block.handlebars
 |    └── index.handlebars
 |── .gitignore
 |── desktop.ini (.gitignore)
