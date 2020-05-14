@@ -18,7 +18,16 @@ app.use(routes);
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-app.listen(PORT, function() {
-  console.log("Server is listening on http://localhost:" + PORT);
+// ADDED HEROKU INFO to deploy: 
+const host = '0.0.0.0'; 
+app.listen(PORT, host, function(req, res) {
+console.log("App listening on PORT " + PORT + ".");
 });
+
+// ###############################################################
+// BEFORE HEROKU INFO ADDED: app.listen(PORT, function() {
+  //console.log("Server is listening on http://localhost:" + PORT);
+// });
+// ###############################################################
+
 
