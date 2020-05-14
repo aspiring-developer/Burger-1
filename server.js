@@ -19,10 +19,10 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // ADDED HEROKU INFO to deploy: 
-const host = '0.0.0.0'; 
-app.listen(PORT, host, function(req, res) {
-console.log("App listening on PORT " + PORT + ".");
-});
+const host = '0.0.0.0';
+app.listen(PORT, host, function(req, res) {   
+  console.log("App listening on PORT " + PORT + ".");    // This result is seen on terminal
+  });
 
 // ###############################################################
 // BEFORE HEROKU INFO ADDED: app.listen(PORT, function() {
