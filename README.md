@@ -1,13 +1,18 @@
 # Burger Selection App
 A restaurant app that lets users to virtually create and modify their favorite burgers.
 
+![Burger App Deployed Image](https://github.com/ssh1sharma/Burger/blob/master/Screenshots/DEPLOY-TEST-PASSED.JPG)
+
 ### A placeholder image for now!
 ***This will be replaced by the app's functionality Gifs/video/image or something meaningful thing!***
-![Burger App Deployed Image](https://github.com/ssh1sharma/Burger/blob/master/Screenshots/DEPLOY-TEST-PASSED.JPG)
 
 ![Burger Placeholder Image](https://github.com/ssh1sharma/Burger/blob/master/public/assets/img/spicy_chicken.jpg)
 
+### NOTES: 
 - **Check development phase screenshots in "Screenshots" folder.**
+- **GitHub Repository Link: https://github.com/ssh1sharma/Burger**
+- **Deployed to the Web Link: https://burger-app-ss.herokuapp.com/**
+- **The TEST DEPLOY to Heroku is successfully done, but the image is a placeholder and the sub-headers are not matching, so they will be updated! Also, the full functionality is at WIP!!!!!** 
 
 ### Directory Map:
 ```
