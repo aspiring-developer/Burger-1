@@ -8,8 +8,8 @@ let burger = {
     });
   },
   // The variables cols and vals are arrays.
-  createOne: function(cols, vals, callback) {
-    orm.createOne("burgers", cols, vals, function(res) {
+  insertOne: function(cols, vals, callback) {
+    orm.insertOne("burgers", cols, vals, function(res) {
       callback(res);
     });
   },

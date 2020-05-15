@@ -1,5 +1,5 @@
+// importing modules
 const express = require('express');
-// Importing the model "burger.js" from models folder 
 const burger = require('../models/burger.js')
 let router = express.Router();
 
