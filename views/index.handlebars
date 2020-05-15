@@ -1,32 +1,68 @@
-<h1>Burger Selection</h1>
+<div class="container m-0 p-4 mx-auto mainWrapper">
+  <div class="row headerRow text-center">
+    <div class="col headerColumn">
+      <h1>Eat-Da-Burger</h1>
+      <p> virtually create, select and modify your burgers! </p>
+    </div> <!-- .headerColumn ends -->
+  </div> <!-- .headerRow ends -->
 
-<h2>Burgers waiting to be devoured!</h2>
+  <div class="row d-flex justify-content-center align-items-center">
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+    <div class="col text-center my-4" id="burgerImageDiv">
+      <h5>Yummy Burger!!!</h5>
+         
+    <img src="https://user-images.githubusercontent.com/61030935/81988907-3c13ee80-960a-11ea-865d-10cd803d21ab.png" alt="Chicken Sandwich Image" id="burgerImage" style="height: 200px; width: 300px"/>
+      </div>
+    <div class="col">
+      
+      <h5 class="mt-4">Add a Burger</h5>
+      <form class="create-form">
 
-<h2>Burgers that are devoured!</h2>
+        <div class="form-group">
+          <label for="burgerLabel" class="inputLabel">Burger Name: &nbsp;</label> 
+          <input type="text" id="burgerLabel" name="burger_name"> 
+          <button type="submit" class="addBurgerBtn">Add to the List</button>
+        </div>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
+        {{!--  
+ // Codes block below for checkboxes. It looks like it is not doing much, so delete if not needed!
 
   <div class="form-group">
-    <label for="burgerLabel">Burger Name:</label>
-    <input type="text" id="burgerLabel" name="burger_name">
+    <label for="devouredLabel">Devoured?</label><br>
+    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+    <input type="radio" name="devoured" value="0"> Not Devoured!
+  </div> 
+  --}}
+      </form>
+    </div> <!--  ends -->
+    
+    <hr>
   </div>
-  <button type="submit">Add Burger</button>
-</form>
+  
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-6 p-2 newBurgerField">
+          <h5>Burgers devoured!</h5>
+      <br>
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devour=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-sm col-md-6 p-2 devouredBurgerField">
+        <h5>Newly created burgers!</h5>
+      <br>
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block devour=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
 
+    </div>
+  </div> <!-- .mainSectionRow ends -->
+  
+</div> <!-- .mainWrapper ends -->
