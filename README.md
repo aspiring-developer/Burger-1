@@ -2,17 +2,20 @@
 A restaurant app that lets users to virtually create and modify their favorite burgers.
 ``` ..................................................................................... ```
   
+### Screenshot of the functional app in localhost! 
 
-![Burger App Deployed Image](https://github.com/ssh1sharma/Burger/blob/master/Screenshots/WORKING-APP.JPG)
+![Burger App Working Screenshot Image](https://github.com/ssh1sharma/Burger/blob/b9a082fbcac00f1aeac47b307533e0eed5f2ec96/Screenshots/WORKING-APP.JPG)
 
-### A placeholder image for now!
-***This will be replaced by the app's functionality Gifs/video/image or something meaningful thing!***
+### Screenshot of the deployed app in Heroku! 
+
+![Burger App Working Screenshot Image](https://github.com/ssh1sharma/Burger/blob/master/Screenshots/FUNCTIONAL-APP.JPG)
+
 
 ### NOTES: 
 - **Check development phase screenshots in "Screenshots" folder.**
 - **GitHub Repository Link: https://github.com/ssh1sharma/Burger**
 - **Deployed to the Web Link: https://burger-app-ss.herokuapp.com/**
-- **The TEST DEPLOY to Heroku is successfully done, but the image is a placeholder and the sub-headers are not matching, so they will be updated! Also, the full functionality is at WIP!!!!!** 
+- Note: This herokuapp link is Heroku deployment test version. Original version link will be updated after code clean-up! 
 
 ### Directory Map:
 ```
