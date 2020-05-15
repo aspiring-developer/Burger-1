@@ -1,7 +1,6 @@
 const express = require('express');
 // Importing the model "burger.js" from models folder 
 const burger = require('../models/burger.js')
-//const mysql = require("mysql")
 let router = express.Router();
 
 // setting routers  --- create all routes and set up logic within those routes where required.

@@ -1,11 +1,9 @@
 let connection = require("./connection.js");
 
 // Helper function for SQL syntax. 
-// NOTE: These HELPER FUNCTIONS are REFERENCED FROM catApp (chapter 13)
-// Let's say we want to pass 3 values into the mySQL query.
-// In order to write the query, we need 3 question marks.
-// The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
-// ["?", "?", "?"].toString() => "?,?,?";
+// Helper function for SQL syntax. 
+// We want to pass 3 values into the mySQL query, so need 3 question marks.
+// The helper function below loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string. // ["?", "?", "?"].toString() => "?,?,?";
 function printQuestionMarks(num) {
   let arr = [];
 
