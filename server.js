@@ -1,8 +1,5 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
-// const bodyParser = require("body-parser");
-// const orm = require("./config/orm");
-//let connection = require("./config/connection.js");
 let router = require("./controllers/burgers_controller");
 const PORT = process.env.PORT || 5000;
 const app = express();

@@ -29,6 +29,8 @@ li {
   padding: 10px;
   margin: 5px;
  background-color: brown;
+ color: #FFF;
+ text-transform: uppercase;
 }
 
 .label {

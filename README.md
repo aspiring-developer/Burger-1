@@ -3,7 +3,7 @@ A restaurant app that lets users to virtually create and modify their favorite b
 ``` ..................................................................................... ```
   
 
-![Burger App Deployed Image](https://github.com/ssh1sharma/Burger-2/blob/97faa4b40b58ab110bc0ae95957c1ea41b47a63b/Screenshots/DEPLOY-TEST-PASSED.JPG)
+![Burger App Deployed Image](https://github.com/ssh1sharma/Burger/blob/master/Screenshots/WORKING-APP.JPG)
 
 ### A placeholder image for now!
 ***This will be replaced by the app's functionality Gifs/video/image or something meaningful thing!***
