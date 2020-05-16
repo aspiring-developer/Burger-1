@@ -58,7 +58,7 @@ $(document).ready(function () {
     //   );
     // });
 
-    /* This tested in separate script file -works, but not targeting right element. */
+    /* This tested in separate script file - works, but not targeting right element. */
     //     $(".delete-burger").click(function() {
     //       $(".change-devour").remove();
     // });
