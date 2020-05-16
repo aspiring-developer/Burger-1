@@ -13,7 +13,7 @@ A restaurant app that lets users to virtually create and modify their favorite b
 
 ### Screenshot of the deployed app in Heroku! 
 
-![Burger App Working Screenshot Image](https://github.com/ssh1sharma/Burger/blob/7e7ef1261cd669a497dbd4982b69591c648e9665/Screenshots/FUNCTIONAL-APP.JPG)
+![Burger App Working Screenshot Image](https://github.com/ssh1sharma/Burger/blob/6833e7c1c6d9157b41206fc1b35d81b91b8dac1a/Screenshots/FUNCTIONAL-APP.JPG)
 
 ### Installation
 - This app is already deployed to Heroku, so no installation is required to use. Click the link provided above.
