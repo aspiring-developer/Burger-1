@@ -1,6 +1,11 @@
 # Burger Selection App
 A restaurant app that lets users to virtually create and modify their favorite burgers.
 ``` ..................................................................................... ```
+
+### NOTES: 
+- **Check development phase screenshots in "Screenshots" folder.**
+- **GitHub Repository Link: https://github.com/ssh1sharma/Burger**
+- **Deployed to the Web Link: https://burger-app-sh.herokuapp.com/**
   
 ### Screenshot of the functional app in localhost! 
 
@@ -10,14 +15,26 @@ A restaurant app that lets users to virtually create and modify their favorite b
 
 ![Burger App Working Screenshot Image](https://github.com/ssh1sharma/Burger/blob/7e7ef1261cd669a497dbd4982b69591c648e9665/Screenshots/FUNCTIONAL-APP.JPG)
 
+### Installation
+- This app is already deployed to Heroku, so no installation is required to use. Click the link provided above.
 
-### NOTES: 
-- **Check development phase screenshots in "Screenshots" folder.**
-- **GitHub Repository Link: https://github.com/ssh1sharma/Burger**
-- **Deployed to the Web Link: https://burger-app-ss.herokuapp.com/**
-- Note: This herokuapp link is Heroku deployment test version. Original version link will be updated after code clean-up! 
+### Usage
+- Create/add a burger by entering a name in the text field.
+- Move the created burger to tray to serve.
+- Return the burger if you do not want it to be served.
+- Dump a burger if you don't like.
+
+### Credits
+- Pixabay images by Julia Nowak and Mark Tolentino
+
+### License
+- No license information available at this time.
+
+### Contributing
+- No contribution needed.
 
 ### Directory Map:
+
 ```
 Burger
 ├── config
