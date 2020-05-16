@@ -25,7 +25,7 @@ A restaurant app that lets users to virtually create and modify their favorite b
 - Dump a burger if you don't like.
 
 ### Credits
-- Pixabay images by Julia Nowak and Mark Tolentino
+- Pixabay images by Julia Nowak, Mark Tolentino, Shutterbu75, RitaE, Lala Irene, Andrey Cojocary
 
 ### License
 - No license information available at this time.
