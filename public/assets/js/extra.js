@@ -7,19 +7,21 @@ $(document).ready(function () {
   imageButtonEl.addEventListener("click", displayImage);
 
   function getRandomImage() {
-    let imagesArray = ["https://user-images.githubusercontent.com/61030935/82116901-f7d43b80-973a-11ea-8ebd-643eddf3d8bd.png",
+    let imagesArray = ["https://user-images.githubusercontent.com/61030935/82119719-d54c1d80-974e-11ea-9418-b375dd082789.png",
 
-      "https://user-images.githubusercontent.com/61030935/82116925-27834380-973b-11ea-84f9-40d86e5d6a8a.png",
-
-      "https://user-images.githubusercontent.com/61030935/82116945-471a6c00-973b-11ea-9cd3-564a5c6e8475.png",
-
-      "https://user-images.githubusercontent.com/61030935/82116960-58fc0f00-973b-11ea-8953-702c9f26767c.png",
-
-      "https://user-images.githubusercontent.com/61030935/82116968-674a2b00-973b-11ea-86cc-71beb7408ed0.png",
-
-      "https://user-images.githubusercontent.com/61030935/82116984-77faa100-973b-11ea-992c-53bd03c7e1a1.png",
-
-      "https://user-images.githubusercontent.com/61030935/82117002-86e15380-973b-11ea-9283-90de1a6b83f0.png"];
+    "https://user-images.githubusercontent.com/61030935/82119720-d5e4b400-974e-11ea-8f91-dbbca6cc6844.png",
+    
+    "https://user-images.githubusercontent.com/61030935/82119721-d67d4a80-974e-11ea-8e61-7cf460a686d5.png",
+    
+    "https://user-images.githubusercontent.com/61030935/82119722-d715e100-974e-11ea-80e5-7ad994b24d42.png",
+    
+    "https://user-images.githubusercontent.com/61030935/82119723-d7ae7780-974e-11ea-8c36-5debf063f7f2.png",
+    
+    
+    "https://user-images.githubusercontent.com/61030935/82119724-d8dfa480-974e-11ea-88f4-31e010194c0e.png",
+    
+    "https://user-images.githubusercontent.com/61030935/82119726-da10d180-974e-11ea-8a21-30488a60bb3f.png"
+    ];
     let randomImage = imagesArray[Math.floor(Math.random() * imagesArray.length)];
     return randomImage;
   };
