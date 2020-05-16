@@ -30,7 +30,7 @@ function objToSql(ob) {
       arr.push(key + "=" + value);
     }
   }
- // this code block below translates array of strings to a single comma-separated string
+  // this code block below translates array of strings to a single comma-separated string
   return arr.toString();
 }
 
@@ -46,7 +46,7 @@ let orm = {
 
     });
   },
-// inserts a burger into burgers (table)
+  // inserts a burger into burgers (table)
   insertOne: function (tableName, cols, vals, callback) {
     let queryString = `INSERT INTO ${tableName} `;
     queryString += " (";
@@ -66,7 +66,7 @@ let orm = {
       callback(data);
     });
   },
-// updates a burger into burgers (table)
+  // updates a burger into burgers (table)
   // An example of objColVals would be {name: cheeseburger, devoured: true}
   updateOne: function (tableName, objColVals, condition, callback) {
     let queryString = `UPDATE ${tableName}`;
@@ -85,6 +85,7 @@ let orm = {
       callback(data);
     });
   }
+
 };
 
 // exporting the module from this page to be imported into another page

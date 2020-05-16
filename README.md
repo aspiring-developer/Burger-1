@@ -8,7 +8,7 @@ A restaurant app that lets users to virtually create and modify their favorite b
 
 ### Screenshot of the deployed app in Heroku! 
 
-![Burger App Working Screenshot Image](https://github.com/ssh1sharma/Burger/blob/master/Screenshots/FUNCTIONAL-APP.JPG)
+![Burger App Working Screenshot Image](https://github.com/ssh1sharma/Burger/blob/7e7ef1261cd669a497dbd4982b69591c648e9665/Screenshots/FUNCTIONAL-APP.JPG)
 
 
 ### NOTES: 

@@ -30,7 +30,6 @@ $(document).ready(function () {
 
       let newBurger = {
         burger_name: $("#burgerLabel").val().trim(),
-        // devoured: $("[burger_name=devoured]:checked").val().trim()
       };
 
       // Send the POST request.
@@ -45,22 +44,24 @@ $(document).ready(function () {
         }
       );
     });
-    
-    // deletes a burger on each "DELETE" button click
-    $(".delete-burger").on("click", function () {
-      let id = $(this).data("id");
-      // sends the DELETE request.
-      $.ajax("/api/burgers/" + id, {
-        type: "DELETE"
-      }).then(
-        function () {
-          console.log("deleted burger");
-          // reloads the page to get the updated list
-          location.reload();
-        }
-      );
-    });
 
+    // deletes a burger on each "DELETE" button click
+    // $(".delete-burger").on("click", function () {
+    //   let id = $(this).data("id");
+    //   $.ajax("/api/burgers/" + id, {
+    //     type: "DELETE"
+    //   }).then(
+    //     function () {
+    //       console.log("deleted burger");
+    //       location.reload();
+    //     }
+    //   );
+    // });
+
+    /* This tested in separate script file -works, but not targeting right element. */
+    //     $(".delete-burger").click(function() {
+    //       $(".change-devour").remove();
+    // });
 
   });
 

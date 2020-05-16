@@ -5,7 +5,7 @@
 }
 .mainWrapper {
   background-color: #b15825;
-  }
+}
 .headerColumn {
   background-color: brown;
   margin: 0;
@@ -28,9 +28,9 @@ ul {
 li {
   padding: 10px;
   margin: 5px;
- background-color: brown;
- color: #FFF;
- text-transform: uppercase;
+  background-color: brown;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .label {
@@ -47,25 +47,25 @@ li {
   margin-bottom: 5px;
 }
 .addBurgerBtn {
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: brown;
   color: white;
   border-radius: 10px;
- 
-
 }
 #burgerLabel {
   margin-right: 10px;
 }
 
-.newBurgerField, .devouredBurgerField {
+.newBurgerField,
+.devouredBurgerField {
   border: 1px solid #db9797;
 }
-h1, p {
-  color:#fbf0df
+h1,
+p {
+  color: #fbf0df;
 }
-h5{
-  color:#ccf7d3
+h5 {
+  color: #ccf7d3;
 }
 .inputLabel {
   color: #fff;
@@ -88,6 +88,5 @@ h5{
 }
 
 .dynamicNameDisplay {
-  color: #FFF;
-  
+  color: #fff;
 }
