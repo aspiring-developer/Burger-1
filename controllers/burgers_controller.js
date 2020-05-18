@@ -40,6 +40,21 @@ router.put("/api/burgers/:id", (req, res) => {
 
     }
   );
+
+});
+
+router.delete("/api/burgers/:id", (req, res) => {
+  let condition = "id = " + req.params.id;
+  console.log("condition", condition);
+  burger.deleteOne(
+    condition,
+    (result) => {
+
+      res.status(200).end();
+
+    }
+  );
+
 });
 
 // exporting the module from this page to be imported into another page

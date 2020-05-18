@@ -20,6 +20,12 @@ let burger = {
     });
   },
 
+  deleteOne: (condition, callback) => {
+    orm.deleteOne("burgers", condition, (res) => {
+      callback(res);
+    });
+  },
+
 };
 
 // exporting the module from this page to be imported into another page

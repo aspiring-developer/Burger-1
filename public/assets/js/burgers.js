@@ -46,22 +46,18 @@ $(document).ready(function () {
     });
 
     // deletes a burger on each "DELETE" button click
-    // $(".delete-burger").on("click", function () {
-    //   let id = $(this).data("id");
-    //   $.ajax("/api/burgers/" + id, {
-    //     type: "DELETE"
-    //   }).then(
-    //     function () {
-    //       console.log("deleted burger");
-    //       location.reload();
-    //     }
-    //   );
-    // });
+    $(".delete-burger").on("click", function () {
+      let id = $(this).data("id");
+      console.log(id);
 
-    /* This tested in separate script file -works, but not targeting right element. */
-    //     $(".delete-burger").click(function() {
-    //       $(".change-devour").remove();
-    // });
+      $.ajax("/api/burgers/" + id, {
+        type: "DELETE"
+      }).then(
+        function () {
+          console.log("deleted burger");
+          location.reload();
+        });
+    });
 
   });
 

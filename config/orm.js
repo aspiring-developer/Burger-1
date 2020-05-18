@@ -84,6 +84,23 @@ let orm = {
 
       callback(data);
     });
+  },
+
+  deleteOne: (tableName, condition, callback) => {
+    let queryString = "DELETE";
+
+    queryString += ` FROM  ${tableName} `;
+    queryString += " WHERE ";
+    queryString += condition;
+
+    console.log(queryString);
+    connection.query(queryString, (err, data) => {
+      if (err) {
+        throw err;
+      }
+
+      callback(data);
+    });
   }
 
 };
