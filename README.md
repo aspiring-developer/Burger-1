@@ -73,3 +73,9 @@ Burger
 |── README.md
 └── server.js
 ```
+### Note:
+- I have made similar App using Sequelize ORM. 
+- Heroku deployed link:  https://sequelize-burger-app-sh.herokuapp.com/
+- GitHub Repo link: https://github.com/ssh1sharma/sequelize-burger-app
+- A screenshot of the deployed app "practice-SEQUELIZE-burger-app.JPG" is in the Screenshots folder here.
+  **ReadMe file will be updated later.** 
