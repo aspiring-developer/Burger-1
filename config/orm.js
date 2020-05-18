@@ -37,9 +37,9 @@ function objToSql(ob) {
 // Object Relational Mapper (ORM)
 let orm = {
   // selects all burgers from burgers (table)
-  selectAll: function (tableName, callback) {
+  selectAll: (tableName, callback) => {
     let queryString = `SELECT * FROM ${tableName} `;
-    connection.query(queryString, function (err, data) {
+    connection.query(queryString, (err, data) => {
       if (err) throw err;
       console.log(data);
       callback(data);
@@ -47,7 +47,7 @@ let orm = {
     });
   },
   // inserts a burger into burgers (table)
-  insertOne: function (tableName, cols, vals, callback) {
+  insertOne: (tableName, cols, vals, callback) => {
     let queryString = `INSERT INTO ${tableName} `;
     queryString += " (";
     queryString += cols.toString();
@@ -58,7 +58,7 @@ let orm = {
 
     console.log(queryString);
 
-    connection.query(queryString, vals, function (err, data) {
+    connection.query(queryString, vals, (err, data) => {
       if (err) {
         throw err;
       }
@@ -68,7 +68,7 @@ let orm = {
   },
   // updates a burger into burgers (table)
   // An example of objColVals would be {name: cheeseburger, devoured: true}
-  updateOne: function (tableName, objColVals, condition, callback) {
+  updateOne: (tableName, objColVals, condition, callback) => {
     let queryString = `UPDATE ${tableName}`;
 
     queryString += " SET ";
@@ -77,7 +77,7 @@ let orm = {
     queryString += condition;
 
     console.log(queryString);
-    connection.query(queryString, function (err, data) {
+    connection.query(queryString, (err, data) => {
       if (err) {
         throw err;
       }

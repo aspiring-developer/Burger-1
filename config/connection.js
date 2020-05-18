@@ -19,7 +19,7 @@ if (process.env.JAWSDB_URL) {
   });
 };
 // finding out if the connection is established or not
-connection.connect(function (err) {
+connection.connect(err => {
   if (err) {
     console.error("error connecting: " + err.stack);
     return;
